@@ -1,6 +1,6 @@
 package src.tasks.parking;
 
-import tasks.bank.Helper;
+import src.tasks.bank.Helper;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

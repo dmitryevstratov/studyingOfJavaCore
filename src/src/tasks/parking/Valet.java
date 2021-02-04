@@ -1,6 +1,6 @@
 package src.tasks.parking;
 
-import tasks.bank.Helper;
+import src.tasks.bank.Helper;
 
 class Valet implements Runnable, ValetActions{
 

@@ -1,6 +1,6 @@
 package src.tasks.callCenter;
 
-import tasks.bank.Helper;
+import src.tasks.bank.Helper;
 
 class Client implements Runnable, ClientActions{
 

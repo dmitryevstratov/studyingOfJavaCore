@@ -1,8 +1,8 @@
 package src.tasks.harbor;
 
-import tasks.bank.Helper;
+import src.tasks.bank.Helper;
 
-class Ship implements Runnable, ShipActions{
+class Ship implements Runnable, ShipActions {
 
     private boolean isRun = true;
     private final String name;
@@ -39,7 +39,7 @@ class Ship implements Runnable, ShipActions{
     @Override
     public void enterToHarbor() {
         Helper.printMessage(getName() + " entered in the harbor");
-        Helper.sleep(Helper.getRandom(2000,3000));
+        Helper.sleep(Helper.getRandom(2000, 3000));
     }
 
     @Override
@@ -50,10 +50,10 @@ class Ship implements Runnable, ShipActions{
     @Override
     public void goToPier() {
         Helper.printMessage(getName() + " go to the pier");
-        Helper.sleep(Helper.getRandom(2000,3000));
+        Helper.sleep(Helper.getRandom(2000, 3000));
         setRun(false);
-        while (!isRun()){
-            synchronized (this){
+        while (!isRun()) {
+            synchronized (this) {
                 queueShips.add(this);
                 try {
                     wait();

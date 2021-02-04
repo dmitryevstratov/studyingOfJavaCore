@@ -1,6 +1,6 @@
 package src.tasks.mcDonalds;
 
-import tasks.bank.Helper;
+import src.tasks.bank.Helper;
 
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;

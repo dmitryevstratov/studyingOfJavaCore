@@ -1,6 +1,6 @@
 package src.tasks.harbor;
 
-import tasks.bank.Helper;
+import src.tasks.bank.Helper;
 
 class Pier implements Runnable, PierActions{
 
