@@ -2,18 +2,14 @@ package src.tasks.lang.throwable;
 
 public class Main {
 
-    public void method(int a) throws MyException {
-
-        int c = 20 / a;
-
-    }
-
     public static void main(String[] args) {
 
         try {
-            new Main().method(0);
+            MyException e = new MyException();
+            e.initCause(new NullPointerException("Actual cause"));
+            throw e;
         } catch (MyException e) {
-            e.printStackTrace();
+            System.out.println(e.getCause());
         }
 
 
